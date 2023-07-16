@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            padding-top: 50px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro</h1>
+    <form action="registro" method="post">
+        <table align="center">
+            <tr>
+                <td><label for="nombre_usuario">Nombre de usuario:</label></td>
+                <td><input type="text" id="nombre_usuario" name="nombre_usuario"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Contraseña:</label></td>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><label for="rut_persona">Rut:</label></td>
+                <td><input type="text" id="rut_persona" name="rut_persona"></td>
+            </tr>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" name="nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="apellido">Apellido:</label></td>
+                <td><input type="text" id="apellido" name="apellido"></td>
+            </tr>
+            <tr>
+                <td><label for="direccion">Dirección:</label></td>
+                <td><input type="text" id="direccion" name="direccion"></td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo:</label></td>
+                <td><input type="text" id="correo" name="correo"></td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Teléfono:</label></td>
+                <td><input type="text" id="telefono" name="telefono"></td>
+            </tr>
+            <tr>
+                <td><label for="nombre_mascota">Nombre de mascota:</label></td>
+                <td><input type="text" id="nombre_mascota" name="nombre_mascota"></td>
+            </tr>
+            <tr>
+                <td><label for="monto_inicial">Monto inicial:</label></td>
+                <td><input type="text" id="monto_inicial" name="monto_inicial"></td>
+            </tr>
+            <tr>
+                <td><label for="rut_ejecutivo">Rut del ejecutivo:</label></td>
+                <td><input type="text" id="rut_ejecutivo" name="rut_ejecutivo"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Registrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transferencia</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            padding-top: 50px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transferencia</h1>
+    <form action="transferencia" method="post">
+        <table align="center">
+            <tr>
+                <td><label for="rutCliente">Rut del cliente:</label></td>
+                <td><input type="text" id="rutCliente" name="rutCliente"></td>
+            </tr>
+            <tr>
+                <td><label for="rutDueno">Rut del dueño:</label></td>
+                <td><input type="text" id="rutDueno" name="rutDueno"></td>
+            </tr>
+            <tr>
+                <td><label for="idCuenta">ID de la cuenta:</label></td>
+                <td><input type="text" id="idCuenta" name="idCuenta"></td>
+            </tr>
+            <tr>
+                <td><label for="montoTransferencia">Monto de transferencia:</label></td>
+                <td><input type="text" id="montoTransferencia" name="montoTransferencia"></td>
+            </tr>
+            <tr>
+                <td><label for="cuentaTransferencia">Cuenta de transferencia:</label></td>
+                <td><input type="text" id="cuentaTransferencia" name="cuentaTransferencia"></td>
+            </tr>
+            <tr>
+                <td><label for="tipoCuenta">Tipo de cuenta:</label></td>
+                <td><input type="text" id="tipoCuenta" name="tipoCuenta"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Transferir"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
